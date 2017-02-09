@@ -2,19 +2,19 @@
 using Microsoft.WindowsAzure.Storage.Queue;
 using Newtonsoft.Json;
 
-namespace laget.azure_enquer
+namespace laget.azure_enqueueuer
 {
-    public interface IAzureEnquer
+    public interface IAzureEnqueueuer
     {
         void Enqueue(string queueName, dynamic msg);
         void Enqueue(string queueName, string msg);
     }
 
-    public class AzureEnquer : IAzureEnquer
+    public class AzureEnqueueuer : IAzureEnqueueuer
     {
         readonly CloudQueueClient _client;
 
-        public AzureEnquer(string cloudStorageAccountConnStr)
+        public AzureEnqueueuer(string cloudStorageAccountConnStr)
         {
             var storageAccount = CloudStorageAccount.Parse(cloudStorageAccountConnStr);
             _client = storageAccount.CreateCloudQueueClient();
