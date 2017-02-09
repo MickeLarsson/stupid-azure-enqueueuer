@@ -4,17 +4,17 @@ using Newtonsoft.Json;
 
 namespace laget.azure_enqueueuer
 {
-    public interface IAzureEnqueueuer
+    public interface IStupidEnqueueuer
     {
         void Enqueue(string queueName, dynamic msg);
         void Enqueue(string queueName, string msg);
     }
 
-    public class AzureEnqueueuer : IAzureEnqueueuer
+    public class StupidEnqueueuer : IStupidEnqueueuer
     {
         readonly CloudQueueClient _client;
 
-        public AzureEnqueueuer(string cloudStorageAccountConnStr)
+        public StupidEnqueueuer(string cloudStorageAccountConnStr)
         {
             var storageAccount = CloudStorageAccount.Parse(cloudStorageAccountConnStr);
             _client = storageAccount.CreateCloudQueueClient();

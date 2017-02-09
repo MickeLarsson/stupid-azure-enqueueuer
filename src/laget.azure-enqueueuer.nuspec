@@ -10,5 +10,6 @@
     <description>Takes the hassle out of enqueueueueing plain string messages on an azure queue.</description>
     <releaseNotes>First release.</releaseNotes>
     <copyright>Copyright 2017</copyright>
+    <projectUrl>https://github.com/laget-se/stupid-azure-enqueueuer</projectUrl>
   </metadata>
 </package>
