@@ -3,12 +3,11 @@
   <metadata>
     <id>laget.tools.StupidAzureEnqueueuer</id>
     <version>$version$</version>
-    <title>$title$</title>
+    <title>Stupid Azure Enqueueuer</title>
     <authors>miklar</authors>
     <owners>laget.se</owners>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>Takes the hassle out of enqueueueueing plain string messages on an azure queue.</description>
-    <releaseNotes>First release.</releaseNotes>
+    <description>Takes the hassle out of enqueueueueing plain strings, or dynamic objects, as messages on an azure queue.</description>
     <copyright>Copyright 2017</copyright>
     <projectUrl>https://github.com/laget-se/stupid-azure-enqueueuer</projectUrl>
   </metadata>
