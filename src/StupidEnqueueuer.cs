@@ -30,7 +30,7 @@ namespace laget.azure_enqueueuer
             var queue = _client.GetQueueReference(queueName);
             queue.CreateIfNotExists();
 
-            var message = new CloudQueueMessage(JsonConvert.SerializeObject(msg));
+            var message = new CloudQueueMessage(msg);
             queue.AddMessage(message);
         }
     }
